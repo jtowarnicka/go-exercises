@@ -62,7 +62,7 @@ func main() {
 	}
 	defer file.Close()
 
-	for i := 1000; i <= 1000000; i+=10000 {
+	for i := 10000; i <= 1000000; i+=10000 {
 		result := collatz(i, 1)
 		fmt.Fprintf(file, "%d %d\n", i, result)
 	}
