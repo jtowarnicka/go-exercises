@@ -1,0 +1,7 @@
+[-] learn c
+[x] stepik
+[ ] clean cat's litter
+[ ] do laundry
+[ ] do go exercise
+[+] kiosk project
+[+] do go exercise
