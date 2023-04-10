@@ -12,14 +12,18 @@ func main() {
 	fmt.Print("c: ")
 	fmt.Scan(&c)
 
-	delta := b*b - 4*a*c
-	if delta < 0 {
-		fmt.Println("No real roots")
-	}
-	if delta == 0 {
-		fmt.Println("x0 = ", -b/(2*a))
-	}
-	if delta > 0 {
-		fmt.Println("x1 =", (-b+delta)/(2*a), "x2 =", (-b-delta)/(2*a))
+	if (a == 0) {
+		fmt.Println("Not a quadratic equasion")
+	} else {
+		delta := b*b - 4*a*c
+		if delta < 0 {
+			fmt.Println("No real roots")
+		}
+		if delta == 0 {
+			fmt.Println("x0 = ", -b/(2*a))
+		}
+		if delta > 0 {
+			fmt.Println("x1 =", (-b+delta)/(2*a), "x2 =", (-b-delta)/(2*a))
+		}
 	}
 }
